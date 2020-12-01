@@ -21,5 +21,7 @@ public class ExceptionController extends ResponseEntityExceptionHandler {
     public ResponseEntity<MessageResponse> handleValidationException(final Exception ex){
         return new ResponseEntity<>(new MessageResponse(ex.getMessage()), HttpStatus.BAD_REQUEST);
     }
+    
+    
 
 }
